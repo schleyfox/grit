@@ -37,7 +37,6 @@ Gem::Specification.new do |s|
     benchmarks.txt
     examples/ex_add_commit.rb
     examples/ex_index.rb
-    schleyfox-grit.gemspec
     lib/grit.rb
     lib/grit/actor.rb
     lib/grit/blame.rb
@@ -69,6 +68,7 @@ Gem::Specification.new do |s|
     lib/grit/submodule.rb
     lib/grit/tag.rb
     lib/grit/tree.rb
+    schleyfox-grit.gemspec
   ]
   # = MANIFEST =
 

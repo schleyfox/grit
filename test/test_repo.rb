@@ -235,7 +235,7 @@ class TestRepo < Test::Unit::TestCase
   end
 
   def test_diff2
-    Git.any_instance.expects(:native).with('diff', {}, 'a', 'b', '--').returns(fixture('diff_p'))
+    Git.any_instance.expects(:native).with('diff', {:full_index => true}, 'a', 'b', '--').returns(fixture('diff_p'))
     diffs = @r.diff('a', 'b')
 
     assert_equal 15, diffs.size

@@ -502,7 +502,7 @@ module Grit
       diff = self.git.native('diff', {:full_index => true}, a, b, '--', *paths)
 
       if diff =~ /diff --git a/
-        diff = diff.sub(/.+?(diff --git a)/m, '\1')
+        diff = diff.sub(/.*?(diff --git a)/m, '\1')
       else
         diff = ''
       end

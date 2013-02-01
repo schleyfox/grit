@@ -13,8 +13,8 @@ require 'zlib'
 require 'grit/git-ruby/internal/raw_object'
 require 'grit/git-ruby/internal/file_window'
 
-PACK_SIGNATURE = "PACK"
-PACK_IDX_SIGNATURE = "\377tOc"
+PACK_SIGNATURE = "PACK".force_encoding('BINARY')
+PACK_IDX_SIGNATURE = "\377tOc".force_encoding('BINARY')
 
 module Grit
   module GitRuby
